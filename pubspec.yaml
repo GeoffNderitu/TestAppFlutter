@@ -24,6 +24,12 @@ dev_dependencies:
     sdk: flutter
 
 
+# Utility packages
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+
   flutter_lints: ^3.0.0
 
 
