@@ -4,6 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
+import 'package:url_launcher/url_launcher_string.dart';
 
 class MySokoAppDeviceUtils {
   static void hideKeyboard(BuildContext context) {
@@ -110,7 +111,7 @@ class MySokoAppDeviceUtils {
     }
   }
   
-  static canLaunchUrlString(String url) {}
+  // static canLaunchUrlString(String url) {}
   
-  static launchUrlString(String url) {}
+  // static launchUrlString(String url) {}
 }
