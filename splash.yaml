@@ -7,7 +7,7 @@ flutter_native_splash:
   android_12:
     color: "#FFFFFF"
     color_dark: "#272727"
-    image: assets/logos/my-soko-logo-light.png
-    image_dark: assets/logos/my-soko-logo-dark.png
+    image: assets/logos/ogo-color.png
+    image_dark: assets/logos/logo-black.png
 
   web: false
