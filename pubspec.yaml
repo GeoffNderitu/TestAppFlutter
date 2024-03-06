@@ -18,6 +18,7 @@ dependencies:
 
   #State Management
   get: ^4.6.5
+  get_storage: ^2.1.1
 
 dev_dependencies:
   flutter_test:
@@ -43,6 +44,7 @@ flutter:
     - assets/logos/
     - assets/icons/
     - assets/images/
+    
 
   
   fonts:
