@@ -4,7 +4,10 @@ class MySokoAppImages{
   static const String darkAppLogo = "assets/logos/my-soko-logo-dark.png";
   static const String lightAppLogo = "assets/logos/my-soko-logo-light.png";
 
-
   static const String google = "assets/logos/google-icon.png";
   static const String facebook = "assets/logod/facebook-icon.png";
+
+  static const String onBoardingImage1 = "assets/images/on_boarding_images/juicy-girl-and-boy-searching-for-the-right-files.gif";
+  static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy-woman-in-shopping-cart.gif";
+  static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy-man-delivery.gif";
 }
