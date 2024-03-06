@@ -1,5 +1,5 @@
 
-class MySokoApptexts{
+class MySokoAppTexts{
 
 
   // On-boarding texts
@@ -12,7 +12,7 @@ class MySokoApptexts{
   static const String onBoardingSubTitle3 = "Have Your Order Delivered to Your Doorstep in a Fast and Secure way!";
 
   // Home
-  static const String onBoardinghomeAppBarTitle = "Come on! Take a Look Around :)";
-  static const String onBoardingTTitle1 = "Geoffrey N Ngugi";
+  // static const String onBoardinghomeAppBarTitle = "Come on! Take a Look Around :)";
+  // static const String onBoardingAppTitle1 = "Geoffrey N Ngugi";
   
 }
