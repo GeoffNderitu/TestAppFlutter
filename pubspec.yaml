@@ -34,6 +34,7 @@ dev_dependencies:
   url_launcher: ^6.1.12
   flutter_native_splash: ^2.3.2
   flutter_lints: ^3.0.0
+  smooth_page_indicator: ^1.1.0
 
 
 flutter:
@@ -45,7 +46,7 @@ flutter:
   assets:
     - assets/logos/
     - assets/icons/
-    - assets/images/
+    - assets/images/on_boarding_images/
     
 
   
