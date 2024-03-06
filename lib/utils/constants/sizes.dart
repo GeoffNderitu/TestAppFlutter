@@ -1,5 +1,5 @@
 
-class MySokosizes{
+class MySokoSizes{
 
   // App sizing
   static const double xs = 4.0;
