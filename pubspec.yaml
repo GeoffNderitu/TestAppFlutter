@@ -52,11 +52,11 @@ flutter:
   fonts:
     - family: Poppins
       fonts: 
-      - asset: assets/fonts/Poppins-Light.tff
+      - asset: assets/fonts/Poppins-Light.ttf
         weight: 300
-      - asset: assets/fonts/Poppins-Regular.tff
+      - asset: assets/fonts/Poppins-Regular.ttf
         weight: 400
-      - asset: assets/fonts/Poppins-Italic.tff
+      - asset: assets/fonts/Poppins-Italic.ttf
         style: italic
       - asset: assets/fonts/Poppins-Medium.ttf
         weight: 500
