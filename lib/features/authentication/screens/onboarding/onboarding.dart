@@ -3,6 +3,7 @@ import 'package:flutter/widgets.dart';
 import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_navigation.dart';
 import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_page.dart';
 import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_skip.dart';
+import 'package:new_app_flutter/features/authentication/screens/widgets/onboardingnextbutton.dart';
 import 'package:new_app_flutter/utils/constants/colors.dart';
 import 'package:new_app_flutter/utils/constants/image_strings.dart';
 import 'package:new_app_flutter/utils/constants/sizes.dart';
@@ -10,6 +11,7 @@ import 'package:new_app_flutter/utils/constants/text_strings.dart';
 import 'package:new_app_flutter/utils/device/device_utility.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:iconsax/iconsax.dart';
 
 
  class OnBoardingScreen extends StatelessWidget {
@@ -47,12 +49,17 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
           // Dot navigation SmoothIndicator
         const OnBoardingNavigation(),
 
+
+        // Circular Btn
+        OnBoardingNextButton(),
+
        
         ],
       ),
     );
   }
 }
+
 
 
 
