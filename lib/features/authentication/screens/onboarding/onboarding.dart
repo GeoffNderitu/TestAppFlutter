@@ -2,6 +2,7 @@ import'package:flutter/material.dart';
 import 'package:new_app_flutter/utils/constants/image_strings.dart';
 import 'package:new_app_flutter/utils/constants/sizes.dart';
 import 'package:new_app_flutter/utils/constants/text_strings.dart';
+import 'package:new_app_flutter/utils/device/device_utility.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 
 
@@ -33,7 +34,29 @@ import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
               ),
             ],
           ),
+
+          // Skip Button
+          const OnBoardingSkip(),
+       
         ],
+      ),
+    );
+  }
+}
+
+class OnBoardingSkip extends StatelessWidget {
+  const OnBoardingSkip({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned(
+      top: MySokoAppDeviceUtils.getAppBarHeight(), 
+      right: MySokoSizes.defaultSpace,
+      child: TextButton(
+        onPressed: (){}, 
+        child: const Text('Skip'),
       ),
     );
   }
@@ -41,7 +64,10 @@ import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 
 class OnBoardingPage extends StatelessWidget {
   const OnBoardingPage({
-    super.key, required this.image, required this.title, required this.subTitle,
+    super.key, 
+    required this.image, 
+    required this.title, 
+    required this.subTitle,
   });
 
   final String image, title, subTitle;
