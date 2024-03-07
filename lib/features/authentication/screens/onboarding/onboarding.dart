@@ -36,7 +36,7 @@ import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
           ),
 
           // Skip Button
-          const OnBoardingSkip(),
+          const  OnBoardingSkip(),
        
         ],
       ),
