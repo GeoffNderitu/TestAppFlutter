@@ -1,5 +1,6 @@
 import'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_navigation.dart';
 import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_page.dart';
 import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_skip.dart';
 import 'package:new_app_flutter/utils/constants/colors.dart';
@@ -44,15 +45,7 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
           const  OnBoardingSkip(),
 
           // Dot navigation SmoothIndicator
-        Positioned(
-          bottom: MySokoAppDeviceUtils.getBottomnavigationBarHeight() + 25,
-          left: MySokoSizes.defaultSpace,
-          child: SmoothPageIndicator(
-            controller: PageController(), 
-            count: 3, 
-            effect: const ExpandingDotsEffect(activeDotColor: MySokoAppColors.dark, dotHeight: 6),
-            ),
-            ),
+        const OnBoardingNavigation(),
 
        
         ],
@@ -60,6 +53,8 @@ import 'package:smooth_page_indicator/smooth_page_indicator.dart';
     );
   }
 }
+
+
 
 
 
