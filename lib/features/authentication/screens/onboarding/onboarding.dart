@@ -1,5 +1,8 @@
 import'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:get/get.dart';
+// import 'package:get/get_core/src/get_main.dart';
+import 'package:new_app_flutter/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_navigation.dart';
 import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_page.dart';
 import 'package:new_app_flutter/features/authentication/screens/widgets/onboarding_skip.dart';
@@ -19,6 +22,7 @@ import 'package:iconsax/iconsax.dart';
 
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
     return Scaffold(
       body: Stack(
         children: [
