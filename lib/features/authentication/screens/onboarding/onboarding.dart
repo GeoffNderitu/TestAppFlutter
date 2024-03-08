@@ -30,6 +30,7 @@ import 'package:iconsax/iconsax.dart';
           // Horizontal scrollable Pages
           PageView(
             controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const[
               OnBoardingPage(
                 image: MySokoAppImages.onBoardingImage1, 
