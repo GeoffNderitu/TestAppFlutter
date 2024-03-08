@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:new_app_flutter/features/authentication/controllers.onboarding/onboarding_controller.dart';
 import 'package:new_app_flutter/utils/constants/colors.dart';
 import 'package:new_app_flutter/utils/constants/sizes.dart';
 import 'package:new_app_flutter/utils/device/device_utility.dart';
@@ -17,7 +18,7 @@ class OnBoardingNextButton extends StatelessWidget {
       right: MySokoSizes.defaultSpace,
       bottom: MySokoAppDeviceUtils.getBottomnavigationBarHeight(),
       child: ElevatedButton(
-         onPressed: (){},   
+         onPressed: () => OnBoardingController.instance.nextPage(),   
          style: ElevatedButton.styleFrom(shape: const CircleBorder(), backgroundColor: dark ? MySokoAppColors.primary : Colors.black),
          child: const Icon(Iconsax.arrow_right_3),
     ),
