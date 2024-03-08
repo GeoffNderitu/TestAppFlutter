@@ -21,6 +21,6 @@ class OnBoardingNextButton extends StatelessWidget {
          style: ElevatedButton.styleFrom(shape: const CircleBorder(), backgroundColor: dark ? MySokoAppColors.primary : Colors.black),
          child: const Icon(Iconsax.arrow_right_3),
     ),
-          );
+    );
   }
 }

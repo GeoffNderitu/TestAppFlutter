@@ -23,11 +23,13 @@ import 'package:iconsax/iconsax.dart';
   @override
   Widget build(BuildContext context) {
     final controller = Get.put(OnBoardingController());
+
     return Scaffold(
       body: Stack(
         children: [
           // Horizontal scrollable Pages
           PageView(
+            controller: controller.pageController,
             children: const[
               OnBoardingPage(
                 image: MySokoAppImages.onBoardingImage1, 
@@ -55,7 +57,7 @@ import 'package:iconsax/iconsax.dart';
 
 
         // Circular Btn
-        OnBoardingNextButton(),
+       const OnBoardingNextButton(),
 
        
         ],

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 
@@ -5,6 +6,10 @@ class OnBoardingController extends GetxController {
   static OnBoardingController get instance => Get.find();
 
   // Have Variables here
+  final pageController = PageController();
+  Rx<int> currentPageIndex = 0.obs;
+
+
 
   // Update the current index when page is scrolled
   void updatePageIndicator(index) {}
