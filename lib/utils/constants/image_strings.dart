@@ -1,7 +1,7 @@
 
 class MySokoAppImages{
 
-  static const String darkAppLogo = "assets/logos/my-soko-logo-dark.png";
+  static const String darkAppLogo = "assets/logos/logo-black.png";
   static const String lightAppLogo = "assets/logos/logo-color.png";
 
   static const String google = "assets/logos/google-icon.png";
