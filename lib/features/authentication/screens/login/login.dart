@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:new_app_flutter/common/styles/spacing_styles.dart';
+import 'package:new_app_flutter/utils/constants/colors.dart';
 import 'package:new_app_flutter/utils/constants/image_strings.dart';
 import 'package:new_app_flutter/utils/constants/sizes.dart';
 import 'package:new_app_flutter/utils/constants/text_strings.dart';
@@ -103,6 +104,18 @@ class LoginScreen extends StatelessWidget {
                      ),
                    ),
                  ),
+                //  Divider section
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [Divider(
+                    color: dark ? MySokoAppColors.darkGrey : MySokoAppColors.grey, 
+                    thickness: 0.5, 
+                    indent: 60, 
+                    endIndent: 5,
+                  )
+                  ],
+                )
+
               ],
             ),
           ),
