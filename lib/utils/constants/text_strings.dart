@@ -11,7 +11,8 @@ class MySokoAppTexts{
   static const String onBoardingSubTitle2 = "We focus on offering stress-free transactions - Pick a convenient Payment Method";
   static const String onBoardingSubTitle3 = "Have Your Order Delivered to Your Doorstep in a Fast and Secure way!";
 
-  static const String loginTitle = "Log-in Here";
+  static const String loginTitle = "It's Nice to see you again";
+  static const String loginSubTitle = "Experience Our Top-Tier Services Today!";
   // Home
   // static const String onBoardinghomeAppBarTitle = "Come on! Take a Look Around :)";
   // static const String onBoardingAppTitle1 = "Geoffrey N Ngugi";
