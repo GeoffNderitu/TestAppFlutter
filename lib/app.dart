@@ -12,7 +12,7 @@ import 'package:new_app_flutter/utils/theme/theme.dart';
       themeMode: ThemeMode.system,
       theme: MySokoAppTheme.lightTheme,
       darkTheme: MySokoAppTheme.darkTheme,
-      home: OnBoardingScreen(),
+      home: const OnBoardingScreen(),
     );
   }
 }
