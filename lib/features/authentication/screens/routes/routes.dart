@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:new_app_flutter/features/authentication/screens/login/login.dart';
 
 class RoutesClass {
   // static String home = "/";
@@ -9,6 +10,6 @@ class RoutesClass {
 
   static List<GetPage> routes =[
     // GetPage(name: home, page: ()=>const HomeScreen),
-  
+    GetPage(name: logInScreen, page: ()=>const LoginScreen()),
   ];
 }
