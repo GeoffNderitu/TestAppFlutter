@@ -6,6 +6,8 @@ import 'package:new_app_flutter/utils/constants/image_strings.dart';
 import 'package:new_app_flutter/utils/constants/sizes.dart';
 import 'package:new_app_flutter/utils/constants/text_strings.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
+// ignore: unused_import
+import 'package:get/get.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -82,9 +84,7 @@ class LoginScreen extends StatelessWidget {
                         ),
                         ),
                         ),
-                        const SizedBox(
-                          height: MySokoSizes.spaceBtwnItems
-                          ), 
+                         
                         /// Create an Account Btn
                         SizedBox(
                           width: double.infinity,
