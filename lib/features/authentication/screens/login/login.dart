@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:new_app_flutter/common/styles/spacing_styles.dart';
 import 'package:new_app_flutter/utils/constants/colors.dart';
@@ -92,9 +94,15 @@ class LoginScreen extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Divider(color: dark ? MySokoAppColors.darkGrey: MySokoAppColors.grey, thickness: 0.5, indent: 60, endIndent: 5),
-                ]
-              )
+                  Flexible(child: Divider(color: dark ? MySokoAppColors.darkGrey: MySokoAppColors.grey, thickness: 0.5, indent: 60, endIndent: 5)),
+                  Text(MySokoAppTexts.orSignInWith.capitalize!, style: Theme.of(context).textTheme.labelMedium),
+                  Flexible(child: Divider(color: dark ? MySokoAppColors.darkGrey: MySokoAppColors.grey, thickness: 0.5, indent: 5, endIndent: 60)),
+                ],
+              ),
+
+              // Footer Section
+
+              
             ],
           ),          
           ),
