@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 import 'package:new_app_flutter/common/styles/spacing_styles.dart';
 import 'package:new_app_flutter/utils/constants/image_strings.dart';
 import 'package:new_app_flutter/utils/constants/sizes.dart';
@@ -29,7 +30,19 @@ class LoginScreen extends StatelessWidget {
                   const SizedBox(height: MySokoSizes.sm),
                   Text(MySokoAppTexts.loginSubTitle, style: Theme.of(context).textTheme.bodyMedium),
                 ],
-              )
+              ),
+
+              // Form
+              Form(child: Column(
+                children: [
+                  TextFormField(
+                    decoration: const  InputDecoration(
+                      prefixIcon: Icon(Iconsax.direct_right),
+                      labelText: MySokoAppTexts.email
+                    ),
+                  )
+              ],
+              ))
             ],
           ),          
           ),
