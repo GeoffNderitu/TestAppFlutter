@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 
@@ -23,11 +24,13 @@ class SignUpScreen extends StatelessWidget {
               children: [
                 Row(
                   children: [
-                    TextFormField(
-                      expands: false,
-                      decoration: const InputDecoration(
-                        labelText: MySokoAppTexts.firstName,
-                        prefixIcon: Icon(Iconsax.user),
+                    Expanded(
+                      child: TextFormField(
+                        expands: false,
+                        decoration: const InputDecoration(
+                          labelText: MySokoAppTexts.firstName,
+                          prefixIcon: Icon(Iconsax.user),
+                        ),
                       ),
                     ),
                   ],
