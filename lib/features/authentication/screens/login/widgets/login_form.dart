@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:new_app_flutter/features/authentication/screens/signup/signup.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -57,7 +59,7 @@ class MySokoAppLoginForm extends StatelessWidget {
                   const SizedBox(height: MySokoSizes.spaceBtwnItems),
 
                   // Create Account Btn
-                  SizedBox(width: double.infinity, child: OutlinedButton(onPressed: () {}, child: const Text(MySokoAppTexts.createAccount))),
+                  SizedBox(width: double.infinity, child: OutlinedButton(onPressed: () => Get.to(() => const SignUpScreen()), child: const Text(MySokoAppTexts.createAccount))),
                   const SizedBox(height: MySokoSizes.spaceBtwnSections),
                 ],
                 ),
