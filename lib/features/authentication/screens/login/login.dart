@@ -81,27 +81,31 @@ class LoginScreen extends StatelessWidget {
                         ),
               
                         /// Sign In Btn
-                        Expanded(
-                          child: SizedBox(width: double.infinity, 
-                          child: ElevatedButton(onPressed: () {}, 
-                          child: const Text(MySokoAppTexts.signIn
+                       
+                          Expanded(
+                            child: SizedBox(width: double.infinity, 
+                            child: ElevatedButton(onPressed: () {}, 
+                            child: const Text(MySokoAppTexts.signIn
+                            ),
+                            ),
+                            ),
                           ),
-                          ),
-                          ),
-                        ),
+                       
                          
                         /// Create an Account Btn
-                        Expanded(
-                          child: SizedBox(
-                            width: double.infinity,
-                             child: OutlinedButton(
-                              onPressed: () {}, 
-                              child: const Text(
-                                MySokoAppTexts.createAccount
-                                ),
-                                ),
-                                ),
-                        ),
+                       
+                          Expanded(
+                            child: SizedBox(
+                              width: double.infinity,
+                               child: OutlinedButton(
+                                onPressed: () {}, 
+                                child: const Text(
+                                  MySokoAppTexts.createAccount
+                                  ),
+                                  ),
+                                  ),
+                          ),
+                     
                         const SizedBox(
                           height: MySokoSizes.spaceBtwnSections
                           ), 
