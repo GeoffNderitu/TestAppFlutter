@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:new_app_flutter/common/styles/spacing_styles.dart';
+import 'package:new_app_flutter/utils/constants/colors.dart';
 import 'package:new_app_flutter/utils/constants/image_strings.dart';
 import 'package:new_app_flutter/utils/constants/sizes.dart';
 import 'package:new_app_flutter/utils/constants/text_strings.dart';
@@ -33,52 +34,67 @@ class LoginScreen extends StatelessWidget {
               ),
 
               // Form
-              Form(child: Column(
-                children: [
-                  // Email
-                  TextFormField(
-                    decoration: const  InputDecoration(
-                      prefixIcon: Icon(Iconsax.direct_right),
-                      labelText: MySokoAppTexts.email
-                    ),
-                  ),
-                   const SizedBox(height: MySokoSizes.spaceBtwnInputFields),
-
-                  // Password
-                   TextFormField(
-                    decoration: const  InputDecoration(
-                      prefixIcon: Icon(Iconsax.password_check),
-                      labelText: MySokoAppTexts.password,
-                      suffixIcon: Icon(Iconsax.eye_slash),
-                    ),
-                  ),
-                  const SizedBox(height: MySokoSizes.spaceBtwnInputFields * 0.5),
-
-                  // Remember and forgot pass section
-                  Row(
-                    children: [
-                      Row(
-                        children: [
-                          Checkbox(value:  true, onChanged: (value) {}),
-                          const Text(MySokoAppTexts.rememberMe),
-                        ],
+              Form(child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: MySokoSizes.spaceBtwnSections),
+                child: Column(
+                  children: [
+                    // Email
+                    TextFormField(
+                      decoration: const  InputDecoration(
+                        prefixIcon: Icon(Iconsax.direct_right),
+                        labelText: MySokoAppTexts.email
                       ),
-                      
-                      // Forgot Password
-                      TextButton(onPressed: () {}, child: const Text(MySokoAppTexts.forgetPassword)),
-                    ],
-                  ),
+                    ),
+                     const SizedBox(height: MySokoSizes.spaceBtwnInputFields),
+                
+                    // Password
+                     TextFormField(
+                      decoration: const  InputDecoration(
+                        prefixIcon: Icon(Iconsax.password_check),
+                        labelText: MySokoAppTexts.password,
+                        suffixIcon: Icon(Iconsax.eye_slash),
+                      ),
+                    ),
+                    const SizedBox(height: MySokoSizes.spaceBtwnInputFields * 0.5),
+                
+                    // Remember and forgot pass section
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        // Remember
+                        Row(
+                          children: [
+                            Checkbox(value:  true, onChanged: (value) {}),
+                            const Text(MySokoAppTexts.rememberMe),
+                          ],
+                        ),
+                        
+                        // Forgot Password
+                        TextButton(onPressed: () {}, child: const Text(MySokoAppTexts.forgetPassword)),
+                      ],
+                    ),
+                    const SizedBox(height: MySokoSizes.spaceBtwnSections),
+                
+                
+                  // Sign-in Btn
+                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () {}, child: const Text(MySokoAppTexts.signIn))),
+                  const SizedBox(height: MySokoSizes.spaceBtwnItems),
+
+                  // Create Account Btn
+                  SizedBox(width: double.infinity, child: OutlinedButton(onPressed: () {}, child: const Text(MySokoAppTexts.createAccount))),
                   const SizedBox(height: MySokoSizes.spaceBtwnSections),
-
-
-                // Sign-in Btn
-                SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () {}, child: const Text(MySokoAppTexts.signIn))),
-
-                // Create Account Btn
-                SizedBox(width: double.infinity, child: OutlinedButton(onPressed: () {}, child: const Text(MySokoAppTexts.createAccount))),
-              ],
+                ],
+                ),
               ),
               ),
+
+              // Divider
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Divider(color: dark ? MySokoAppColors.darkGrey: MySokoAppColors.grey, thickness: 0.5, indent: 60, endIndent: 5),
+                ]
+              )
             ],
           ),          
           ),
