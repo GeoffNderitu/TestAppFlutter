@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:new_app_flutter/common/styles/spacing_styles.dart';
 import 'package:new_app_flutter/utils/constants/colors.dart';
@@ -8,6 +10,7 @@ import 'package:new_app_flutter/utils/constants/text_strings.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 // ignore: unused_import
 import 'package:get/get.dart';
+export 'package:new_app_flutter/features/authentication/screens/login/login.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -78,23 +81,27 @@ class LoginScreen extends StatelessWidget {
                         ),
               
                         /// Sign In Btn
-                        SizedBox(width: double.infinity, 
-                        child: ElevatedButton(onPressed: () {}, 
-                        child: const Text(MySokoAppTexts.signIn
-                        ),
-                        ),
+                        Expanded(
+                          child: SizedBox(width: double.infinity, 
+                          child: ElevatedButton(onPressed: () {}, 
+                          child: const Text(MySokoAppTexts.signIn
+                          ),
+                          ),
+                          ),
                         ),
                          
                         /// Create an Account Btn
-                        SizedBox(
-                          width: double.infinity,
-                           child: OutlinedButton(
-                            onPressed: () {}, 
-                            child: const Text(
-                              MySokoAppTexts.createAccount
-                              ),
-                              ),
-                              ),
+                        Expanded(
+                          child: SizedBox(
+                            width: double.infinity,
+                             child: OutlinedButton(
+                              onPressed: () {}, 
+                              child: const Text(
+                                MySokoAppTexts.createAccount
+                                ),
+                                ),
+                                ),
+                        ),
                         const SizedBox(
                           height: MySokoSizes.spaceBtwnSections
                           ), 
