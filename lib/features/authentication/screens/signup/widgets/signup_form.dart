@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:new_app_flutter/features/authentication/screens/signup/widgets/signUp_terms_conditions.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 
 import '../../../../../utils/constants/colors.dart';
@@ -11,7 +12,6 @@ class MySokoAppSignUpForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = MySokoAppHelperFunctions.isDarkMode(context);
     return  Form(child: Column(
               children: [
                 Row(
@@ -81,34 +81,15 @@ class MySokoAppSignUpForm extends StatelessWidget {
                       const SizedBox(height: MySokoSizes.spaceBtwnSections),
 
                       // Ts & Cs Checkbox
-                      Row(children: [
-                         SizedBox(width: 24, height: 24, child: Checkbox(value: true, onChanged: (value){})),
-                        const SizedBox(width: MySokoSizes.spaceBtwnItems),
-                        Text.rich(TextSpan(
-                          children: [
-                            TextSpan(text: '${MySokoAppTexts.iAgreeTo} ', style: Theme.of(context).textTheme.bodySmall),
-                            TextSpan(text: '${MySokoAppTexts.privacyPolicy} ', style: Theme.of(context).textTheme.bodyMedium!.apply(
-                              color: dark ? MySokoAppColors.white : MySokoAppColors.primary,
-                              decoration: TextDecoration.underline,
-                              decorationColor: dark ? MySokoAppColors.white : MySokoAppColors.primary,
-                            )),
-                            TextSpan(text: '${MySokoAppTexts.and} ', style: Theme.of(context).textTheme.bodySmall),
-                            TextSpan(text: MySokoAppTexts.termsOfUse, style: Theme.of(context).textTheme.bodyMedium!.apply(
-                              color: dark ? MySokoAppColors.white : MySokoAppColors.primary,
-                              decoration: TextDecoration.underline,
-                              decorationColor: dark ? MySokoAppColors.white : MySokoAppColors.primary,
-                            )),
-                          ],
-                        ),
-                        ),
-                      ],
-                      ),
+                      const MySokoAppTermsAndConditions(),
                       const SizedBox(height: MySokoSizes.spaceBtwnSections),
 
                       // Sign Up Btn
-                      SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(MySokoAppTexts.createAccount),),)
-                  ],
-                )
-              );
+                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(MySokoAppTexts.createAccount),),)
+            ],
+       )
+   );
   }
 }
+
+
