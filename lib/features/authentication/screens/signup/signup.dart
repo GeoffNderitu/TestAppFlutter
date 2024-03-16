@@ -33,6 +33,60 @@ class SignUpScreen extends StatelessWidget {
                         ),
                       ),
                     ),
+                    const SizedBox(width: MySokoSizes.spaceBtwnInputFields),
+
+                    // Last name
+                    Expanded(
+                      child: TextFormField(
+                        expands: false,
+                        decoration: const InputDecoration(
+                          labelText: MySokoAppTexts.lastName,
+                          prefixIcon: Icon(Iconsax.user),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(height: MySokoSizes.spaceBtwnInputFields),
+
+
+                  // username
+                    TextFormField(
+                        expands: false,
+                        decoration: const InputDecoration(
+                          labelText: MySokoAppTexts.username,
+                          prefixIcon: Icon(Iconsax.user_edit),
+                        ),
+                      ),
+                      TextFormField(
+                        expands: false,
+                        decoration: const InputDecoration(
+                          labelText: MySokoAppTexts.email,
+                          prefixIcon: Icon(Iconsax.direct),
+                        ),
+                      ),
+
+                      // Phone No.
+                      TextFormField(
+                        expands: false,
+                        decoration: const InputDecoration(
+                          labelText: MySokoAppTexts.phoneNo,
+                          prefixIcon: Icon(Iconsax.call),
+                        ),
+                      ),
+                      const SizedBox(height: MySokoSizes.spaceBtwnInputFields),
+
+                      // Password
+                      TextFormField(
+                        expands: false,
+                        decoration: const InputDecoration(
+                          labelText: MySokoAppTexts.password,
+                          prefixIcon: Icon(Iconsax.password_check),
+                          suffixIcon: Icon(Iconsax.eye_slash),
+                        ),
+                      ),
+                      const SizedBox(height: MySokoSizes.spaceBtwnSections),
+
+                      // Ts & Cs Checkbox
+                      
                   ],
                 )
               ],
