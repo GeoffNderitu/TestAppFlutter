@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:new_app_flutter/common/widgets/success_screen/success_screen.dart';
 import 'package:new_app_flutter/features/authentication/screens/login/login.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 
@@ -38,7 +39,12 @@ class VerifyEmailScreen extends StatelessWidget {
             Text(MySokoAppTexts.confirmEmailSubTitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center),
             const SizedBox(height: MySokoSizes.spaceBtwnSections),
             // Btns
-            SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () {}, child: const Text(MySokoAppTexts.mySokoAppContinue)),),
+            SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () => Get.to(() => SuccessScreen(
+              image: MySokoAppImages.staticSuccessIllustration, 
+              title: MySokoAppTexts.yourAccountCreatedTitle, 
+              subTitle: MySokoAppTexts.yourAccountCreatedSubTitle, onPressed: () => Get.to(() => const LoginScreen()),
+            ),
+            ), child: const Text(MySokoAppTexts.mySokoAppContinue)),),
             const SizedBox(height: MySokoSizes.spaceBtwnItems),
              SizedBox(width: double.infinity, child: TextButton(onPressed: () {}, child: const Text(MySokoAppTexts.resendEmail)),),
           ],
