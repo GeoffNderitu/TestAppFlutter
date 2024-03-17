@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:new_app_flutter/common/widgets/success_screen/success_screen.dart';
 import 'package:new_app_flutter/features/authentication/screens/login/login.dart';
 import 'package:new_app_flutter/features/authentication/screens/signup/signup.dart';
 import 'package:new_app_flutter/features/authentication/screens/signup/verify_email.dart';
@@ -14,6 +15,7 @@ void main() {
       '/LoginScreen':(context) => LoginScreen(),
       '/SignUpScreen':(context) => SignUpScreen(),
       '/VerifyEmailScreen':(context) => VerifyEmailScreen(),
+      // '/SuccessScreen':(context) => SuccessScreen(),
     },
   ));
 } 
