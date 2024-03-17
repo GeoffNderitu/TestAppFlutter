@@ -38,7 +38,9 @@ class VerifyEmailScreen extends StatelessWidget {
             Text(MySokoAppTexts.confirmEmailSubTitle, style: Theme.of(context).textTheme.labelMedium, textAlign: TextAlign.center),
             const SizedBox(height: MySokoSizes.spaceBtwnSections),
             // Btns
-
+            SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () {}, child: const Text(MySokoAppTexts.mySokoAppContinue)),),
+            const SizedBox(height: MySokoSizes.spaceBtwnItems),
+             SizedBox(width: double.infinity, child: TextButton(onPressed: () {}, child: const Text(MySokoAppTexts.resendEmail)),),
           ],
         ),
         ),
