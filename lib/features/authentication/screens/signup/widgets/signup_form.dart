@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:new_app_flutter/features/authentication/screens/signup/verify_email.dart';
 import 'package:new_app_flutter/features/authentication/screens/signup/widgets/signUp_terms_conditions.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 
@@ -85,7 +87,12 @@ class MySokoAppSignUpForm extends StatelessWidget {
                       const SizedBox(height: MySokoSizes.spaceBtwnSections),
 
                       // Sign Up Btn
-                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(MySokoAppTexts.createAccount),),)
+                  SizedBox(
+                    width: double.infinity, 
+                    child: ElevatedButton(onPressed: () => Get.to(() => const VerifyEmailScreen()), 
+                    child: const Text(MySokoAppTexts.createAccount),
+                    ),
+                    ),
             ],
        )
    );
