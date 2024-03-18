@@ -43,7 +43,7 @@ class MySokoAppTexts{
   static const String loginSubTitle = "Experience Our Top-Tier Services Today!";
   static const String signupTitle = "It's time to Create your account";
   static const String forgetPasswordTitle = "Forget password";
-  static const String forgetPasswordSubTitle = "Don't panic, we alll forget sometimes. Fill in your email and we'll you send a password reset link";
+  static const String forgetPasswordSubTitle = "Don't panic, we all forget sometimes. Fill in your email and we'll you send a password reset link";
   static const String changeYourPasswordTitle = "Password Reset Link Sent!";
   static const String changeYourPasswordSubTitle = "We Take Your ACcount's Security As Our Priority! We've Sent a Secure Link to Safely Change Your Password and Keep Your Account Protected.";
   static const String confirmEmail = "Verify your email address!";
