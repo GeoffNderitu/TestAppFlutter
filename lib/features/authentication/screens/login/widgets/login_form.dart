@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:new_app_flutter/features/authentication/screens/password_config/forget_pass.dart';
 import 'package:new_app_flutter/features/authentication/screens/signup/signup.dart';
 
 import '../../../../../utils/constants/sizes.dart';
@@ -48,7 +49,7 @@ class MySokoAppLoginForm extends StatelessWidget {
                         ),
                         
                         // Forgot Password
-                        TextButton(onPressed: () {}, child: const Text(MySokoAppTexts.forgetPassword)),
+                        TextButton(onPressed: () => Get.to(() => const ForgetPassword()), child: const Text(MySokoAppTexts.forgetPassword)),
                       ],
                     ),
                     const SizedBox(height: MySokoSizes.spaceBtwnSections),
