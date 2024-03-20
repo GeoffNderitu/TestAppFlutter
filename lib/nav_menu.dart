@@ -1,4 +1,5 @@
  import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
 
  class NavigationMenu extends StatelessWidget {
    const NavigationMenu({super.key});
@@ -6,11 +7,11 @@
    @override
    Widget build(BuildContext context) {
      return Scaffold(
-      bottomNavigationBar: NavigationBar(destinations: [
-        Container(color: Color.fromARGB(255, 240, 126, 74)),
-        Container(color: Color.fromARGB(255, 84, 241, 168)),
-        Container(color: Color.fromARGB(255, 74, 187, 240)),
-        Container(color: Color.fromARGB(255, 97, 76, 67)),
+      bottomNavigationBar: NavigationBar(destinations: const [
+         NavigationDestination(icon: Icon(Iconsax.home), label: 'Home'),
+         NavigationDestination(icon: Icon(Iconsax.shop), label: 'Shop'),
+         NavigationDestination(icon: Icon(Iconsax.heart), label: 'Wishlist'),
+         NavigationDestination(icon: Icon(Iconsax.user), label: 'Profile'),
       ],
       ),
      );
