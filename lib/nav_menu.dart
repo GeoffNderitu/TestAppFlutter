@@ -25,7 +25,7 @@ import 'package:iconsax/iconsax.dart';
         ],
         ),
       ),
-      body: Container(),
+      body: controller.screens[controller.selectedIndex.value],
      );
    }
  }
