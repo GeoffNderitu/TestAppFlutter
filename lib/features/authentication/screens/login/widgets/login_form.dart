@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:new_app_flutter/features/authentication/screens/password_config/forget_pass.dart';
 import 'package:new_app_flutter/features/authentication/screens/signup/signup.dart';
+import 'package:new_app_flutter/nav_menu.dart';
 
 import '../../../../../utils/constants/sizes.dart';
 import '../../../../../utils/constants/text_strings.dart';
@@ -56,7 +57,7 @@ class MySokoAppLoginForm extends StatelessWidget {
                 
                 
                   // Sign-in Btn
-                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () {}, child: const Text(MySokoAppTexts.signIn))),
+                  SizedBox(width: double.infinity, child: ElevatedButton(onPressed: () =>  Get.to(() => const NavigationMenu()), child: const Text(MySokoAppTexts.signIn))),
                   const SizedBox(height: MySokoSizes.spaceBtwnItems),
 
                   // Create Account Btn
