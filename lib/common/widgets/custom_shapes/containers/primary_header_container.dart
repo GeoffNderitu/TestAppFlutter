@@ -13,16 +13,19 @@ class MsPrimaryHeaderContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MsCurvedEdgesWidget(
-      child: Container(
-      color: MySokoAppColors.primary,
-      padding: const EdgeInsets.all(0),
-      child: Stack(
-      children: [
-        Positioned(top:-150, right: -250, child: MySokoAppCircularContainer(backgroundColor: MySokoAppColors.textWhite.withOpacity(0.1))),
-        Positioned(top:100, right: -300, child: MySokoAppCircularContainer(backgroundColor: MySokoAppColors.textWhite.withOpacity(0.1))),
-          ],
-        ),
-       ),
+      child: SizedBox(
+        height: 300,
+        child: Container(
+        color: MySokoAppColors.primary,
+        padding: const EdgeInsets.all(0),
+        child: Stack(
+        children: [
+          Positioned(top:-150, right: -250, child: MySokoAppCircularContainer(backgroundColor: MySokoAppColors.textWhite.withOpacity(0.1))),
+          Positioned(top:100, right: -300, child: MySokoAppCircularContainer(backgroundColor: MySokoAppColors.textWhite.withOpacity(0.1))),
+            ],
+          ),
+         ),
+      ),
     );
   }
 }
