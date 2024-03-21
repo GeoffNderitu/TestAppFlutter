@@ -57,7 +57,7 @@ class MySokoAppTexts{
   static const String popularProducts = "Popular Products";
 
   // Home
-  // static const String onBoardinghomeAppBarTitle = "Come on! Take a Look Around :)";
-  // static const String onBoardingAppTitle1 = "Geoffrey N Ngugi";
+  static const String homeAppBarTitle = "Come on! Take a Look Around :)";
+  static const String homeAppBarSubTitle = "Geoffrey N Ngugi";
   
 }
