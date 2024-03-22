@@ -22,6 +22,7 @@ class MsPrimaryHeaderContainer extends StatelessWidget {
         children: [
           Positioned(top:-150, right: -250, child: MySokoAppCircularContainer(backgroundColor: MySokoAppColors.textWhite.withOpacity(0.1))),
           Positioned(top:100, right: -300, child: MySokoAppCircularContainer(backgroundColor: MySokoAppColors.textWhite.withOpacity(0.1))),
+          child,
             ],
           ),
          ),
