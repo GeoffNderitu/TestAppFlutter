@@ -10,30 +10,21 @@ import '../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widge
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/text_strings.dart';
+import 'widgets/home_app_bar.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body:SingleChildScrollView(
         child: Column(
           children: [
             MsPrimaryHeaderContainer(
              child: Column(
               children: [
-                MsAppBar(title: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(MySokoAppTexts.homeAppBarTitle, style: Theme.of(context).textTheme.labelMedium!.apply(color: MySokoAppColors.grey)),
-                    Text(MySokoAppTexts.homeAppBarSubTitle, style: Theme.of(context).textTheme.headlineSmall!.apply(color: MySokoAppColors.white),),
-                  ],
-                ),
-                actions: [
-                  MsCartCounterIcon(onPressed: () {}, iconColor: MySokoAppColors.white)
-                ],
-                )
+                MsHomeAppBar()
               ],
              ),
             )
@@ -43,4 +34,6 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
 
