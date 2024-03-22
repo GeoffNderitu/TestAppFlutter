@@ -8,6 +8,7 @@ import 'package:new_app_flutter/utils/device/device_utility.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 import '../../../../common/widgets/custom_shapes/containers/circular_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
+import '../../../../common/widgets/custom_shapes/containers/search_conatiner.dart';
 import '../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../../utils/constants/colors.dart';
