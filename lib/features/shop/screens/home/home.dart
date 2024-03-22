@@ -7,6 +7,7 @@ import 'package:new_app_flutter/common/widgets/custom_shapes/curved_edges/curved
 import '../../../../common/widgets/custom_shapes/containers/circular_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
+import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/text_strings.dart';
 
@@ -30,25 +31,7 @@ class HomeScreen extends StatelessWidget {
                   ],
                 ),
                 actions: [
-                  Stack(
-                    children: [
-                      IconButton(onPressed: () {}, icon: const Icon(Iconsax.shopping_cart, color: MySokoAppColors.white)),
-                      Positioned(
-                        right: 0,
-                        child: Container(
-                          width: 18,
-                          height: 18,
-                          decoration: BoxDecoration(
-                            color: MySokoAppColors.black,
-                            borderRadius: BorderRadius.circular(18),
-                          ),
-                          child: Center(
-                            child: Text('2', style: Theme.of(context).textTheme.labelLarge!.apply(color: MySokoAppColors.white)),
-                          ),
-                        ),
-                      )
-                    ],
-                  )
+                  MsCartCounterIcon(onPressed: () {}, iconColor: MySokoAppColors.white)
                 ],
                 )
               ],
