@@ -32,7 +32,7 @@ class HomeScreen extends StatelessWidget {
                 actions: [
                   Stack(
                     children: [
-                      IconButton(onPressed: () {}, icon: const Icon(Iconsax.shopping_bag, color: MySokoAppColors.white)),
+                      IconButton(onPressed: () {}, icon: const Icon(Iconsax.shopping_cart, color: MySokoAppColors.white)),
                       Positioned(
                         right: 0,
                         child: Container(
