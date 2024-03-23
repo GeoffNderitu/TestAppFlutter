@@ -11,6 +11,16 @@ class MySokoAppImages{
   static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy-woman-in-shopping-cart.gif";
   static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy-man-delivery.gif";
 
+  static const String sportsIcon = "assets/icons/categories/icons8-soccer-ball-64.png";
+  static const String clothesIcon = "assets/icons/categories/icons8-wardrobe-48.png";
+  static const String shoesIcon = "assets/icons/categories/icons8-sneakers-64.png";
+  static const String cosmeticsIcon = "assets/icons/categories/icons8-cosmetics-96.png";
+  static const String animalsIcon = "assets/icons/categories/icons8-dog-heart-64.png";
+  static const String toysIcon = "assets/icons/categories/icons8-toys-64.png";
+  static const String furnitureIcon = "assets/icons/categories/icons8-furniture-96.png";
+  static const String jeweleryIcon = "assets/icons/categories/icons8-jewelry-100.png";
+  static const String electronicsIcon = "assets/icons/categories/icons8-electronics-48.png";
+
   static const String productIllustration = "images/animations/sammy-guy-doing-workout-with-a-tire.png";
   static const String productSaleIllustration = "images/animations/sammy-34.png";
   static const String staticSuccessIllustration = "images/animations/bubble-gum-man-successfully-crossing-finish-line.gif";
