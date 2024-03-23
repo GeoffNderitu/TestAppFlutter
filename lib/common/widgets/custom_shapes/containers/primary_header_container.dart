@@ -14,7 +14,7 @@ class MsPrimaryHeaderContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return MsCurvedEdgesWidget(
       child: SizedBox(
-        height: 300,
+        height: 400,
         child: Container(
         color: MySokoAppColors.primary,
         padding: const EdgeInsets.all(0),
