@@ -43,19 +43,14 @@ class MsVerticalImageText extends StatelessWidget {
                 Image(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  color: dark ? MySokoAppColors.light : MySokoAppColors.dark,
+                  // color: dark ? MySokoAppColors.dark : MySokoAppColors.dark,
                   )
                   ),
             ),
             // Text Section
             const SizedBox(height: MySokoSizes.spaceBtwnItems / 2),
-            SizedBox(
-              width: 55,
-              child: Text(title, 
+          Text(title, 
               style: Theme.of(context).textTheme.labelMedium!.apply(color: textColor),
-              maxLines: 1,
-              overflow: TextOverflow.ellipsis,
-              ),
               ),
           ],
         ),
