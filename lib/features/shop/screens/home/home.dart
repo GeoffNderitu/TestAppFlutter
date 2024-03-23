@@ -11,6 +11,7 @@ import '../../../../common/widgets/custom_shapes/containers/primary_header_conta
 import '../../../../common/widgets/custom_shapes/containers/search_conatiner.dart';
 import '../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
+import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_strings.dart';
@@ -21,19 +22,57 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body:SingleChildScrollView(
         child: Column(
           children: [
             MsPrimaryHeaderContainer(
              child: Column(
               children: [
-                MsHomeAppBar(),
-                SizedBox(height: MySokoSizes.spaceBtwnSections),
+                const MsHomeAppBar(),
+                const SizedBox(height: MySokoSizes.spaceBtwnSections),
 
                 // Searchbar goes here
-                MsSearchContainer(
+                const MsSearchContainer(
                   text: 'Search Store',
+                ),
+                const SizedBox(height: MySokoSizes.spaceBtwnSections),
+
+                // Categories Section
+                Padding(padding: const EdgeInsets.only(left: MySokoSizes.defaultSpace), 
+                child: Column(
+                  children: [
+
+                    // Heading for categories
+                    const MsSectionHeading(title: 'Popular Categories', showActionButton: false),
+                    const SizedBox(height: MySokoSizes.spaceBtwnItems),
+
+                    // Categories 
+                    SizedBox(
+                      height: 80,
+                      child: ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: 6,
+                        scrollDirection: Axis.horizontal,
+                        itemBuilder: (_, index) {
+                          return Column(
+                            children: [
+                              Container(
+                                width: 56,
+                                height: 56,
+                                padding: const EdgeInsets.all(MySokoSizes.sm),
+                                decoration: BoxDecoration(
+                                  color: MySokoAppColors.white,
+                                  borderRadius: BorderRadius.circular(100),
+                                ),
+                              )
+                            ],
+                          );
+                        },
+                      ),
+                    )
+                  ],
+                ),
                 )
               ],
              ),
@@ -44,5 +83,6 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
 
 
