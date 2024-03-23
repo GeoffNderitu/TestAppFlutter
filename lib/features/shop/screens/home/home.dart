@@ -4,11 +4,12 @@ import 'package:flutter/widgets.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:new_app_flutter/common/widgets/app_bar/app_bar.dart';
 import 'package:new_app_flutter/common/widgets/custom_shapes/curved_edges/curved_edges.dart';
+import 'package:new_app_flutter/features/shop/screens/home/widgets/home_categories.dart';
 import 'package:new_app_flutter/utils/device/device_utility.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 import '../../../../common/widgets/custom_shapes/containers/circular_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
-import '../../../../common/widgets/custom_shapes/containers/search_conatiner.dart';
+import '../../../../common/widgets/custom_shapes/containers/search_container.dart';
 import '../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 import '../../../../common/widgets/image_text/vertical_image_text.dart';
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
@@ -24,43 +25,33 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body:SingleChildScrollView(
         child: Column(
           children: [
             MsPrimaryHeaderContainer(
              child: Column(
               children: [
-                const MsHomeAppBar(),
-                const SizedBox(height: MySokoSizes.spaceBtwnSections),
+                MsHomeAppBar(),
+                SizedBox(height: MySokoSizes.spaceBtwnSections),
 
                 // Searchbar goes here
-                const MsSearchContainer(
+                MsSearchContainer(
                   text: 'Search Store',
                 ),
-                const SizedBox(height: MySokoSizes.spaceBtwnSections),
+                SizedBox(height: MySokoSizes.spaceBtwnSections),
 
                 // Categories Section
-                Padding(padding: const EdgeInsets.only(left: MySokoSizes.defaultSpace), 
+                Padding(
+                padding: EdgeInsets.only(left: MySokoSizes.defaultSpace), 
                 child: Column(
                   children: [
 
                     // Heading for categories
-                    const MsSectionHeading(title: 'Popular Categories', showActionButton: false, textColor: Colors.white,),
-                    const SizedBox(height: MySokoSizes.spaceBtwnItems),
-
+                    MsSectionHeading(title: 'Popular Categories', showActionButton: false, textColor: Colors.white,),
+                    SizedBox(height: MySokoSizes.spaceBtwnItems),
                     // Categories 
-                    SizedBox(
-                      height: 80,
-                      child: ListView.builder(
-                        shrinkWrap: true,
-                        itemCount: 6,
-                        scrollDirection: Axis.horizontal,
-                        itemBuilder: (_, index) {
-                          return MsVerticalImageText(image: MySokoAppImages.shoesIcon, title: 'Shoes', onTap: (){},);
-                        },
-                      ),
-                    )
+                    MsHomeCategories(),
                   ],
                 ),
                 )
@@ -73,4 +64,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
 
