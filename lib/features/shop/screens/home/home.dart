@@ -10,9 +10,11 @@ import '../../../../common/widgets/custom_shapes/containers/circular_container.d
 import '../../../../common/widgets/custom_shapes/containers/primary_header_container.dart';
 import '../../../../common/widgets/custom_shapes/containers/search_conatiner.dart';
 import '../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
+import '../../../../common/widgets/image_text/vertical_image_text.dart';
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
+import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/text_strings.dart';
 import 'widgets/home_app_bar.dart';
@@ -44,7 +46,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
 
                     // Heading for categories
-                    const MsSectionHeading(title: 'Popular Categories', showActionButton: false),
+                    const MsSectionHeading(title: 'Popular Categories', showActionButton: false, textColor: Colors.white,),
                     const SizedBox(height: MySokoSizes.spaceBtwnItems),
 
                     // Categories 
@@ -55,19 +57,7 @@ class HomeScreen extends StatelessWidget {
                         itemCount: 6,
                         scrollDirection: Axis.horizontal,
                         itemBuilder: (_, index) {
-                          return Column(
-                            children: [
-                              Container(
-                                width: 56,
-                                height: 56,
-                                padding: const EdgeInsets.all(MySokoSizes.sm),
-                                decoration: BoxDecoration(
-                                  color: MySokoAppColors.white,
-                                  borderRadius: BorderRadius.circular(100),
-                                ),
-                              )
-                            ],
-                          );
+                          return MsVerticalImageText(image: MySokoAppImages.shoesIcon, title: 'Shoes', onTap: (){},);
                         },
                       ),
                     )
@@ -83,6 +73,4 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
-
-
 
