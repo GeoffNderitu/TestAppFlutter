@@ -27,4 +27,17 @@ class MySokoAppImages{
   static const String deliveredIllustration = "images/animations/sammy-come-back-later.png";
   static const String deliveredEmailIllustration = "images/animations/bubble-gum-message-sent.gif";
   static const String verifyIllustration = "images/animations/sammy-man-is-going-on-a-trip-with-a-suitcase-and-a-passport.png";
+
+  static const String promoBanner1 = "images/banners/model-promo.jpg";
+  static const String promoBanner2 = "images/banners/nike-shoe-promo.jpg";
+  static const String promoBanner3 = "images/banners/spring-sale.png";
+  static const String banner1 = "images/banners/house-hold-appliances.png";
+  static const String banner2 = "images/banners/nike-shoe-product.jpg";
+  static const String banner3 = "images/banners/tshirt-product-promo.jpg";
+  static const String banner4 = "images/banners/shoes-sale.png";
+  static const String banner5 = "images/banners/electronics-sale.png";
+  static const String banner6 = "images/banners/big-sale.png";
+  static const String banner7 = "images/banners/sammy-delivery-with-gps-navigation.gif";
+  static const String banner8 = "images/banners/dizzy-man-surrounded-by-sale-offers.png";
+
 }
