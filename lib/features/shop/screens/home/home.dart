@@ -6,6 +6,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:new_app_flutter/common/widgets/app_bar/app_bar.dart';
 import 'package:new_app_flutter/common/widgets/custom_shapes/curved_edges/curved_edges.dart';
 import 'package:new_app_flutter/features/shop/screens/home/widgets/home_categories.dart';
+import 'package:new_app_flutter/features/shop/screens/home/widgets/promo_slider.dart';
 import 'package:new_app_flutter/utils/device/device_utility.dart';
 import 'package:new_app_flutter/utils/helpers/helper_functions.dart';
 import '../../../../common/widgets/custom_shapes/containers/circular_container.dart';
@@ -27,11 +28,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return const Scaffold(
       body:SingleChildScrollView(
         child: Column(
           children: [
-            const MsPrimaryHeaderContainer(
+            MsPrimaryHeaderContainer(
              child: Column(
               children: [
                 MsHomeAppBar(),
@@ -62,33 +63,8 @@ class HomeScreen extends StatelessWidget {
             ),
             // Body Section
             Padding(
-              padding: const EdgeInsets.all(MySokoSizes.defaultSpace),
-              child: Column(
-                children: [
-                  CarouselSlider(
-                    options: CarouselOptions(
-                      viewportFraction: 1,
-                    ),
-                    items: const [
-                      MsRoundedImage(imageUrl: MySokoAppImages.banner2),
-                      MsRoundedImage(imageUrl: MySokoAppImages.banner4),
-                      MsRoundedImage(imageUrl: MySokoAppImages.banner1),
-                    ],
-                  ),
-                  const SizedBox(height: MySokoSizes.spaceBtwnItems),
-                  Row(
-                    children: [
-                      for (int i = 0; i < 3; i++)
-                      const MySokoAppCircularContainer(
-                        width: 20,
-                        height: 4,
-                        margin: EdgeInsets.only(right: 10),
-                        backgroundColor: Colors.blue,
-                      ),
-                    ],
-                  )
-                ],
-              )
+              padding: EdgeInsets.all(MySokoSizes.defaultSpace),
+              child: MsPromoSlider(),
             )
           ],
         ),
