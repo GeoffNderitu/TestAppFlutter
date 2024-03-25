@@ -31,17 +31,19 @@ class MsPromoSlider extends StatelessWidget {
           ],
         ),
         const SizedBox(height: MySokoSizes.spaceBtwnItems),
-        Obx(
-          () => Row(
-            children: [
-              for (int i = 0; i < 3; i++)
-              MySokoAppCircularContainer(
-                width: 20,
-                height: 4,
-                margin: const EdgeInsets.only(right: 10),
-                backgroundColor: controller.carouselCurrentIndex.value == i ? MySokoAppColors.primary : MySokoAppColors.grey,
-              ),
-            ],
+        Center(
+          child: Obx(
+            () => Row(
+              children: [
+                for (int i = 0; i < 3; i++)
+                MySokoAppCircularContainer(
+                  width: 20,
+                  height: 4,
+                  margin: const EdgeInsets.only(right: 10),
+                  backgroundColor: controller.carouselCurrentIndex.value == i ? MySokoAppColors.primary : MySokoAppColors.grey,
+                ),
+              ],
+            ),
           ),
         )
       ],
