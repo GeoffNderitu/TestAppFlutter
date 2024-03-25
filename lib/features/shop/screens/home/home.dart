@@ -63,14 +63,30 @@ class HomeScreen extends StatelessWidget {
             // Body Section
             Padding(
               padding: const EdgeInsets.all(MySokoSizes.defaultSpace),
-              child: CarouselSlider(
-                options: CarouselOptions(
-                  viewportFraction: 1,
-                ),
-                items: const [
-                  MsRoundedImage(imageUrl: MySokoAppImages.banner2),
-                  MsRoundedImage(imageUrl: MySokoAppImages.banner4),
-                  MsRoundedImage(imageUrl: MySokoAppImages.banner1),
+              child: Column(
+                children: [
+                  CarouselSlider(
+                    options: CarouselOptions(
+                      viewportFraction: 1,
+                    ),
+                    items: const [
+                      MsRoundedImage(imageUrl: MySokoAppImages.banner2),
+                      MsRoundedImage(imageUrl: MySokoAppImages.banner4),
+                      MsRoundedImage(imageUrl: MySokoAppImages.banner1),
+                    ],
+                  ),
+                  const SizedBox(height: MySokoSizes.spaceBtwnItems),
+                  Row(
+                    children: [
+                      for (int i = 0; i < 3; i++)
+                      const MySokoAppCircularContainer(
+                        width: 20,
+                        height: 4,
+                        margin: EdgeInsets.only(right: 10),
+                        backgroundColor: Colors.blue,
+                      ),
+                    ],
+                  )
                 ],
               )
             )
