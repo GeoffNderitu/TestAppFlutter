@@ -12,7 +12,10 @@ import '../../../../../utils/constants/sizes.dart';
 class MsPromoSlider extends StatelessWidget {
   const MsPromoSlider({
     super.key,
+    required this.banners,
   });
+
+  final List<String> banners;
 
   @override
   Widget build(BuildContext context) {
@@ -24,18 +27,15 @@ class MsPromoSlider extends StatelessWidget {
             viewportFraction: 1,
             onPageChanged: (index, _) => controller.updatePageIndicator(index)
           ),
-          items: const [
-            MsRoundedImage(imageUrl: MySokoAppImages.banner2),
-            MsRoundedImage(imageUrl: MySokoAppImages.banner4),
-            MsRoundedImage(imageUrl: MySokoAppImages.banner1),
-          ],
+          items: banners.map((url) => MsRoundedImage(imageUrl: url)).toList(),
         ),
         const SizedBox(height: MySokoSizes.spaceBtwnItems),
         Center(
           child: Obx(
             () => Row(
+              mainAxisSize: MainAxisSize.min,
               children: [
-                for (int i = 0; i < 3; i++)
+                for (int i = 0; i < banners.length; i++)
                 MySokoAppCircularContainer(
                   width: 20,
                   height: 4,
