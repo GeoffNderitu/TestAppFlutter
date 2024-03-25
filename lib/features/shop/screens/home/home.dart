@@ -64,7 +64,7 @@ class HomeScreen extends StatelessWidget {
             // Body Section
             Padding(
               padding: EdgeInsets.all(MySokoSizes.defaultSpace),
-              child: MsPromoSlider(),
+              child: MsPromoSlider(banners: [MySokoAppImages.banner5, MySokoAppImages.banner3, MySokoAppImages.banner8, MySokoAppImages.banner4],),
             )
           ],
         ),
