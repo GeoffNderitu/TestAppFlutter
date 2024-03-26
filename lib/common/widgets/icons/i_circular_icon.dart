@@ -28,11 +28,11 @@ class MsCircularIcon extends StatelessWidget {
     return Container(
       width: width,
       height: height,
-      color: backgroundColor != null ?
-      backgroundColor! :  MySokoAppHelperFunctions.isDarkMode(context) 
-      ? MySokoAppColors.black.withOpacity(0.9)
-      : MySokoAppColors.white.withOpacity(0.9),
       decoration: BoxDecoration(
+        color: backgroundColor != null
+        ? backgroundColor! 
+        : MySokoAppHelperFunctions.isDarkMode(context) ? MySokoAppColors.black.withOpacity(0.9) 
+        : MySokoAppColors.white.withOpacity(0.9),
         borderRadius: BorderRadius.circular(100),
       ),
       child: IconButton(onPressed: onPressed, icon: Icon(icon, color: color, size: size)),
