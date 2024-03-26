@@ -16,6 +16,7 @@ import '../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widge
 import '../../../../common/widgets/image_text/vertical_image_text.dart';
 import '../../../../common/widgets/images/ms_rounded_image.dart';
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
+import '../../../../common/widgets/products/product_cards/product_card_vertical.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
 import '../../../../utils/constants/colors.dart';
 import '../../../../utils/constants/image_strings.dart';
@@ -64,7 +65,15 @@ class HomeScreen extends StatelessWidget {
             // Body Section
             Padding(
               padding: EdgeInsets.all(MySokoSizes.defaultSpace),
-              child: MsPromoSlider(banners: [MySokoAppImages.banner5, MySokoAppImages.banner3, MySokoAppImages.banner8, MySokoAppImages.banner4],),
+              child: Column(
+                children: [
+                  MsPromoSlider(banners: [MySokoAppImages.banner5, MySokoAppImages.banner3, MySokoAppImages.banner8, MySokoAppImages.banner4],),
+                  
+                  SizedBox(height: MySokoSizes.spaceBtwnSections),
+
+                  MsProductCardVertical(),
+                ],
+              ),
             )
           ],
         ),
