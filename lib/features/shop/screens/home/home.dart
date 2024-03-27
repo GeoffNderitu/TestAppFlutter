@@ -69,9 +69,10 @@ class HomeScreen extends StatelessWidget {
               child: Column(
                 children: [
                   const MsPromoSlider(banners: [MySokoAppImages.banner5, MySokoAppImages.banner3, MySokoAppImages.banner8, MySokoAppImages.banner4],),
-                  
                   const SizedBox(height: MySokoSizes.spaceBtwnSections),
-
+                // Heading
+                const MsSectionHeading(title: 'Popular Products'),
+                const SizedBox(height: MySokoSizes.spaceBtwnItems),
 
                   MsGridLayout(itemCount: 4, itemBuilder: (_, index) => const MsProductCardVertical()),
                 ],
