@@ -13,6 +13,7 @@ import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../../../styles/shadows.dart';
 import '../../icons/i_circular_icon.dart';
+import '../../texts/product_price_text.dart';
 import '../../texts/product_title_text.dart';
 
 class MsProductCardVertical extends StatelessWidget {
@@ -66,7 +67,7 @@ class MsProductCardVertical extends StatelessWidget {
           
           // Details
           Padding(padding: 
-          EdgeInsets.only(left: MySokoSizes.sm),
+          const EdgeInsets.only(left: MySokoSizes.sm),
           child: Column(
             children: [
               const MsProductTitleText(title: 'Green Nike AirMax', smallSize: true),
@@ -82,12 +83,7 @@ class MsProductCardVertical extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    'Ksh 4500',
-                    maxLines: 1,
-                    overflow: TextOverflow.ellipsis,
-                    style: Theme.of(context).textTheme.headlineMedium,
-                  ),
+                  const MsproductPriceText(price: '4500'),
                   Container(
                     decoration: const BoxDecoration(
                       color: MySokoAppColors.dark,
@@ -113,6 +109,7 @@ class MsProductCardVertical extends StatelessWidget {
     );
   }
 }
+
 
 
 
