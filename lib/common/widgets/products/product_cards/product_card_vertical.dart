@@ -58,6 +58,20 @@ class MsProductCardVertical extends StatelessWidget {
               ],
             ),
           ),
+        // Details
+        Padding(padding: const EdgeInsets.only(left: MySokoSizes.sm),
+                child: Column(
+                  children: [
+                    Text(
+                      'Green Nike AirMax',
+                      style: Theme.of(context).textTheme.titleSmall,
+                      overflow: TextOverflow.ellipsis,
+                      maxLines: 2,
+                      textAlign: TextAlign.left,
+                    )
+                  ],
+                ),
+        )
         ],
       ),
     );
