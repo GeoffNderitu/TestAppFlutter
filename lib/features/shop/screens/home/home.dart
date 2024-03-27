@@ -15,6 +15,7 @@ import '../../../../common/widgets/custom_shapes/containers/search_container.dar
 import '../../../../common/widgets/custom_shapes/curved_edges/curved_edges_widget.dart';
 import '../../../../common/widgets/image_text/vertical_image_text.dart';
 import '../../../../common/widgets/images/ms_rounded_image.dart';
+import '../../../../common/widgets/layouts/grid_layout.dart';
 import '../../../../common/widgets/products/cart/cart_menu_icon.dart';
 import '../../../../common/widgets/products/product_cards/product_card_vertical.dart';
 import '../../../../common/widgets/texts/section_heading.dart';
@@ -29,11 +30,11 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body:SingleChildScrollView(
         child: Column(
           children: [
-            MsPrimaryHeaderContainer(
+            const MsPrimaryHeaderContainer(
              child: Column(
               children: [
                 MsHomeAppBar(),
@@ -64,14 +65,15 @@ class HomeScreen extends StatelessWidget {
             ),
             // Body Section
             Padding(
-              padding: EdgeInsets.all(MySokoSizes.defaultSpace),
+              padding: const EdgeInsets.all(MySokoSizes.defaultSpace),
               child: Column(
                 children: [
-                  MsPromoSlider(banners: [MySokoAppImages.banner5, MySokoAppImages.banner3, MySokoAppImages.banner8, MySokoAppImages.banner4],),
+                  const MsPromoSlider(banners: [MySokoAppImages.banner5, MySokoAppImages.banner3, MySokoAppImages.banner8, MySokoAppImages.banner4],),
                   
-                  SizedBox(height: MySokoSizes.spaceBtwnSections),
+                  const SizedBox(height: MySokoSizes.spaceBtwnSections),
 
-                  MsProductCardVertical(),
+
+                  MsGridLayout(itemCount: 4, itemBuilder: (_, index) => const MsProductCardVertical()),
                 ],
               ),
             )
