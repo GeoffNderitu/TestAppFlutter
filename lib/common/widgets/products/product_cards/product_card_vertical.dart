@@ -79,7 +79,10 @@ class MsProductCardVertical extends StatelessWidget {
                   const Icon(Iconsax.verify5, color: MySokoAppColors.primary, size: MySokoSizes.iconXs),
                 ],
               ),
-              // Spacer(),
+            ],
+          ),
+          ),
+          const Spacer(),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
@@ -100,9 +103,6 @@ class MsProductCardVertical extends StatelessWidget {
       
                 ],
               )
-            ],
-          ),
-          )
           ],
         ),
       ),
